@@ -1,0 +1,14 @@
+.nav{
+    background-color: rgb(36, 32, 32);
+    padding: 1em;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    padding: 10px;
+}
