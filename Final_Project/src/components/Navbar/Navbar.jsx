@@ -1,20 +1,23 @@
-import styles from './Navbar.module.css'
+import styles from './Navbar.module.css';
+
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Navbar(){
     return (      
         <nav className={styles.nav}>
             <div className={styles.navbar}>
                 <div>
-                    <a>Home</a>
-                    <a>Upcomming Events</a>
-                    <a>Past Events</a>
+                    <Link to="/">Home</Link> 
+                    <Link to="/upcomming">Upcomming Events</Link>
+                    <Link to="/past">Past Events</Link>
                 </div>
                 <div>
-                    <a>My Events</a>
-                    <a>Going to..</a>
-                    <a>Login</a>
-                    <a>Register</a>
-                    <a>Logout</a>
+                    <Link to="/myEvents">My Events</Link>
+                    <Link to="/goingTo">Going to..</Link>
+                    <Link to="/login">Login</Link>
+                    <Link to="/register">Register</Link>
+                    <Link to="/logout">Logout</Link>
                 </div>
             </div>
         </nav>
